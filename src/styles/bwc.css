@@ -1,0 +1,121 @@
+.app-shell {
+  width: 100%;
+  height: 100%;
+  background: var(--bwc-desktop);
+  color: var(--bwc-text);
+  padding: 8px;
+}
+
+.application-frame {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  border: 2px solid var(--bwc-border);
+  background: var(--bwc-panel);
+}
+
+.menu-bar {
+  display: flex;
+  align-items: center;
+  min-height: 26px;
+  padding: 2px 4px;
+  border-bottom: 1px solid var(--bwc-border);
+  background: var(--bwc-panel);
+}
+
+
+.menu-bar button {
+  padding: 3px 8px;
+  border: 1px solid transparent;
+  background: transparent;
+  color: black;
+  font: inherit;
+  cursor: default;
+}
+
+.menu-bar button:hover {
+  border-color: black;
+  background: white;
+}
+
+.menu-bar button:focus-visible {
+  border-color: black;
+  outline: 1px dotted black;
+  outline-offset: -3px;
+}
+
+.workspace {
+  background:var(--bwc-workspace);
+  min-height: 0;
+}
+
+.status-bar {
+  padding: 4px 8px;
+  border-top: 1px solid var(--bwc-border);
+  background: #eeeeee;
+}
+
+.database-window {
+    width: var(--bwc-window-width);
+    position: absolute;
+    border: 1px solid var(--bwc-border);
+    background: white;
+    
+}
+
+.database-window-titlebar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 4px 8px;
+    background: var(--bwc-titlebar);
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+}
+.window-close-button {
+    width: 20px;
+    height: 18px;
+    padding: 0;
+    border: 1px solid var(--bwc-border);
+    background: var(--bwc-panel);
+    color: var(--bwc-text);
+    font: inherit;
+    line-height: 1;
+    cursor: default;
+}
+
+.window-close-button:focus-visible {
+    outline: 1px dotted var(--bwc-border);
+    outline-offset: -3px;
+}
+
+.database-window-content {
+    padding: 12px;
+    min-height: 150px;
+    color: var(--bwc-text);
+}
+
+.data-table{
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.data-table th, .data-table td {
+    padding: 4px 8px;
+    border: 1px solid var(--bwc-border);
+    text-align: left;
+}
+
+.data-table th{
+    background: var(--bwc-panel);
+}
+
+.selected-row {
+    background: #c0d8ff;
+}
+
+.data-table tbody tr:focus-visible {
+    outline: 1px dotted var(--bwc-border);
+    outline-offset: -3px;
+}
