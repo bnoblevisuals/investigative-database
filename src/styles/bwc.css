@@ -103,7 +103,8 @@
 
 .data-table th, .data-table td {
     padding: 4px 8px;
-    border: 1px solid var(--bwc-border);
+    border-right: 1px solid var(--bwc-border);
+    border-bottom: 1px solid var(--bwc-border);
     text-align: left;
 }
 
@@ -118,4 +119,17 @@
 .data-table tbody tr:focus-visible {
     outline: 1px dotted var(--bwc-border);
     outline-offset: -3px;
+}
+
+.table-summary {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 8px;
+  font-weight: bold;
+}
+
+.table-container {
+  max-height: 240px;
+  overflow: auto;
+  border: 1px solid var(--bwc-border);
 }
