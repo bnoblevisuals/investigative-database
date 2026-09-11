@@ -1,6 +1,6 @@
 import { useState} from "react";
 import DatabaseWindow from "../windows/DatabaseWindow";
-import DataTable from "./DataTable";
+import DataTable from "../components/DataTable";
 
 function DataTableWindow({
     config,

@@ -1,18 +1,18 @@
-import DatabaseWindow from "./DatabaseWindow";
+import DataTableWindow from "./DataTableWindow";
 import claimProfile from "../data/claimProfile";
 import WINDOW_REGISTRY from "../data/windowRegistry";
 import { CLAIM } from "../data/tableColumns";
 
 function ClaimProfileWindow({onClose, onStatusChange}){
     return (
-        <DatabaseWindow
+        <DataTableWindow
        
         config={WINDOW_REGISTRY.W007}
         tableName="CLAIM"
         columns={CLAIM}
         rows={claimProfile}
         getRowId={(claim) => claim.claimId}
-        selectionId = "CLAIM"
+        selectionLabel = "CLAIM"
         onStatusChange={onStatusChange}
         onClose={onClose}
         

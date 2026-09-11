@@ -1,7 +1,7 @@
 import {useEffect, useState} from "react";
 import AboutSystemWindow from "../windows/AboutSystemWindow";
 import ClaimEvidenceProfileWindow from "../windows/ClaimEvidenceProfileWindow";
-import ClaimProfileWindow from "../windows/ClaimProfileWIndow";
+import ClaimProfileWindow from "../windows/ClaimProfileWindow";
 import EquipmentProfileWindow from "../windows/EquipmentProfileWindow";
 import EventParticipantProfileWindow from "../windows/EventParticipantWindow";
 import EvidenceProfileWindow from "../windows/EvidenceProfileWindow";
@@ -36,7 +36,7 @@ const COMMAND_WINDOWS = {
     [COMMAND_TYPES.OPEN_VEHICLE_STATUS_PROFILE]:WINDOW_REGISTRY.W011.id,
     [COMMAND_TYPES.OPEN_TIMELINE_EVENT_PROFILE]:WINDOW_REGISTRY.W012.id,
     [COMMAND_TYPES.OPEN_EVENT_PARTICIPANT_PROFILE]:WINDOW_REGISTRY.W013.id,
-    [COMMAND_TYPES.OPEN_THREAT_ASSESMENT_PROFILE]:WINDOW_REGISTRY.W014.id,
+    [COMMAND_TYPES.OPEN_THREAT_ASSESSMENT_PROFILE]:WINDOW_REGISTRY.W014.id,
     [COMMAND_TYPES.OPEN_SYSTEM_USER_PROFILE]:WINDOW_REGISTRY.W015.id,
     [COMMAND_TYPES.OPEN_RECORD_AUDIT_PROFILE]:WINDOW_REGISTRY.W016.id,
     [COMMAND_TYPES.OPEN_INCIDENT_PARTICIPANT_PROFILE]:WINDOW_REGISTRY.W017.id,
